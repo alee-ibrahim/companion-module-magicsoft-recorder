@@ -1,1 +1,7 @@
 node_modules/
+pkg/
+*.tgz
+.DS_Store
+
+# Local-only reference (removed from upstream in 2019, recoverable from git history)
+docs/REST-protocol-for-Recording.pdf

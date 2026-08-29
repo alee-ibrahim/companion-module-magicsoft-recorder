@@ -1,28 +1,30 @@
 {
 	"name": "magicsoft-recorder",
-	"version": "1.0.1",
-	"api_version": "1.0.0",
-	"description": "MagicSoft Recorder",
-	"keywords": [
-		"Video",
-		"Audio",
-		"Recording"
-	],
-	"manufacturer": "MagicSoft",
-	"product": "Recorder",
-	"shortname": "MagicSoft Recorder",
-	"homepage": "https://github.com/bitfocus/companion-module-magicsoft-recorder#readme",
-	"main": "index.js",
+	"version": "2.0.0",
+	"type": "module",
+	"main": "main.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"dev": "yarn build:watch",
+		"build": "companion-module-build",
+		"build:watch": "companion-module-build --watch",
+		"lint": "eslint --ext .js .",
+		"format": "prettier -w .",
+		"package": "companion-module-build"
 	},
+	"license": "MIT",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/bitfocus/companion-module-magicsoft-recorder.git"
 	},
 	"author": "Andreas H. Thomsen <mc-hauge@hotmail.com>",
-	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/bitfocus/companion-module-magicsoft-recorder/issues"
+	},
+	"homepage": "https://github.com/bitfocus/companion-module-magicsoft-recorder#readme",
+	"dependencies": {
+		"@companion-module/base": "^1.11.0"
+	},
+	"devDependencies": {
+		"@companion-module/tools": "^2.1.0"
 	}
 }
