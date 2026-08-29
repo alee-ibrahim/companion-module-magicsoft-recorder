@@ -1,0 +1,26 @@
+{
+	"id": "magicsoft-recorder",
+	"name": "magicsoft-recorder",
+	"shortname": "MagicSoft Recorder",
+	"description": "Control MagicSoft Recorder via its HTTP/REST protocol, with recording status feedback",
+	"version": "2.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-magicsoft-recorder.git",
+	"bugs": "https://github.com/bitfocus/companion-module-magicsoft-recorder/issues",
+	"maintainers": [
+		{
+			"name": "Andreas H. Thomsen",
+			"email": "mc-hauge@hotmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node22",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.11.3",
+		"entrypoint": "../main.js"
+	},
+	"manufacturer": "MagicSoft",
+	"products": ["Recorder"],
+	"keywords": ["Video", "Audio", "Recording"]
+}
