@@ -3,11 +3,13 @@
 	"version": "2.0.0",
 	"type": "module",
 	"main": "main.js",
+	"engines": {
+		"node": ">=22"
+	},
 	"scripts": {
-		"dev": "yarn build:watch",
+		"dev": "companion-module-build --watch",
 		"build": "companion-module-build",
-		"build:watch": "companion-module-build --watch",
-		"lint": "eslint --ext .js .",
+		"lint": "eslint .",
 		"format": "prettier -w .",
 		"package": "companion-module-build"
 	},

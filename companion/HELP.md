@@ -5,13 +5,13 @@ status feedback, toggle buttons and status variables.
 
 ### Configuration
 
-| Field | Description |
-| --- | --- |
-| **Target IP / Host** | IP address or hostname of the machine running MagicSoft Recorder. |
-| **HTTP Port** | The Recorder Web HTTP port (default `8045`, see *Recorder → Settings → Web*). |
-| **Number of Channels** | How many channels to expose. The REST protocol documents channels `0..3` (4 channels). |
+| Field                     | Description                                                                             |
+| ------------------------- | --------------------------------------------------------------------------------------- |
+| **Target IP / Host**      | IP address or hostname of the machine running MagicSoft Recorder.                       |
+| **HTTP Port**             | The Recorder Web HTTP port (default `8045`, see _Recorder → Settings → Web_).           |
+| **Number of Channels**    | How many channels to expose. The REST protocol documents channels `0..3` (4 channels).  |
 | **Enable Status Polling** | Poll the Recorder for live status. Required for feedback, toggle buttons and variables. |
-| **Poll Interval (ms)** | How often to poll while polling is enabled (default `1000`). |
+| **Poll Interval (ms)**    | How often to poll while polling is enabled (default `1000`).                            |
 
 > **Note:** the control commands (start/stop/split/mark/preset/add time) require
 > a **Web License** on the Recorder. Reading status does not.

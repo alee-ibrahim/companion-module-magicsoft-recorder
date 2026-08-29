@@ -89,12 +89,9 @@ export function getPresets(self) {
 
 		// --- Add time presets ------------------------------------------------
 		for (const t of CHOICES_REC_TIME) {
-			presets[`addtime_${id}_${t.id}`] = simpleButton(
-				ch,
-				'Recording Add Time',
-				`${ch.label}\\n+${t.label}`,
-				[{ actionId: 'rec_time', options: { ch: id, time: Number(t.id) } }],
-			)
+			presets[`addtime_${id}_${t.id}`] = simpleButton(ch, 'Recording Add Time', `${ch.label}\\n+${t.label}`, [
+				{ actionId: 'rec_time', options: { ch: id, time: Number(t.id) } },
+			])
 		}
 	}
 

@@ -94,13 +94,7 @@ export async function pollStatus(self) {
 		self.channelStatus = list
 		self.updateStatus(InstanceStatus.Ok)
 		self.updateVariableValues()
-		self.checkFeedbacks(
-			'recording',
-			'channel_enabled',
-			'channel_remote',
-			'channel_forbidden',
-			'any_recording',
-		)
+		self.checkFeedbacks('recording', 'channel_enabled', 'channel_remote', 'channel_forbidden', 'any_recording')
 	} catch (e) {
 		self.updateStatus(InstanceStatus.ConnectionFailure, e.message)
 	}
